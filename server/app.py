@@ -6,8 +6,11 @@ url='https://pokeapi.co/api/v2/pokemon/1/'
 
 @app.route('/')
 def helloWorld():
-  r = requests.get('https://pokeapi.co/api/v2/pokemon-species')
-  return jsonify(r.text)
+  print('called hello world')
+  # r = requests.get('https://pokeapi.co/api/v2/pokemon-species')
+  # print(r)
+  # return json.dumps(r.text)
+  return 'helloworld'
 
 
 if __name__ == '__main__':
